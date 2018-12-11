@@ -6,9 +6,11 @@ module.exports = function(app) {
     cors({
       origin: [
         'http://localhost:3000',
-        'https://neuefische-todo-app.netlify.com',
+        'https://master--katzenhaus-digital.netlify.com',
+        'https://create-new-dataset--katzenhaus-digital.netlify.com',
+        'https://katzenhaus-digital.netlify.com'
       ],
-      methods: ['OPTIONS', 'GET', 'POST', 'PATCH', 'DELETE'],
+      methods: ['OPTIONS', 'GET', 'POST', 'PATCH', 'DELETE']
     })
   )
 }

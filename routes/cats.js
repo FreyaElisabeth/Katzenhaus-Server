@@ -26,7 +26,7 @@ router.patch('/:id', (req, res) => {
     .catch(err => res.json(err))
 })
 
-/* router.patch('/toggle/:id', (req, res) => {
+router.patch('/toggle/:id', (req, res) => {
   Cat.findById(req.params.id)
     .then(todo => {
       todo.done = !todo.done
@@ -34,7 +34,7 @@ router.patch('/:id', (req, res) => {
     })
     .then(result => res.json(result._id))
     .catch(err => res.json(err))
-}) */
+})
 
 router.get('/clear', (req, res) => {
   Cat.deleteMany()
